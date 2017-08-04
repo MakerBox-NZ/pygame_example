@@ -19,6 +19,8 @@ class Platform(pygame.sprite.Sprite):
         self.image.set_colorkey(alpha)
         self.blockpic = pygame.image.load(img).convert()
 
+        self.rect = self.image.get_rect() 
+
         self.rect.y = yloc
         self.rect.x = xloc
 
